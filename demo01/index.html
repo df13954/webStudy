@@ -9,14 +9,17 @@
 	<body>
 		<form method="get" action="">
 			<p>
-				用户：<input type="text" name="userName"/>
+				用户：<input type="text" name="userName" value="请输入用户名" onfocus="if(this.value=='请输入用户名'){this.value=''}" onblur="if(this.value==''){this.value='请输入用户名'}" />
 			</p>
 			<p>
-				秘密：<input type="password" name="password"/>
+				秘密：<input type="password" name="password" />
 			</p>
 			<p>
-				<input type="submit" value="登陆"/>
-			</p>
+				<input type="submit" value="登陆" </p>
+				<br />
+
+				<img width="400px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557934462&di=a596413e7b03632cdc5e340dcc3aad16&imgtype=jpg&er=1&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2Fcbbb8fad5f0972062ef12aee39473dbc534f97fe.jpg" />
+
 		</form>
 	</body>
 
