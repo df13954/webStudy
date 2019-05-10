@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/day03.css"/>
+	</head>
+	<body>
+		<h1>第三天，css选择器使用</h1>
+		<h3>我们把css文件，html文件，放服务器中，我们访问地址时候，会下载到本地执行</h3>
+		<h3>边下载，边执行（异步下载html和css文件，下载完成，渲染）</h3>
+		<h3>css是怎么找到，要装饰到控件呢？？eg：我有一张电影票，要送人，怎么找到目标？？</h3>
+		<div id="myName">
+			1;ID选择器，通过#id{配置样式  }，id，是控件的唯一标识，好比身份证ID是唯一的
+		</div>
+		<div id="" class="classPhone">
+			2;Class选择器，class="classPhone" 里面可以写多个
+		</div>
+		<div id="">
+			<em>3;标签选择器，直接用标签的名字</em>
+		</div>
+		<div id="" style="background-color: aliceblue;">
+			4;通配符选择器，这个教程还没细讲
+		</div>
+		<h3>##优先级问题，同时使用id选择器，和class选择器，会应用谁的呢？？</h3>
+		<div id="appleDiv" class="appleClass">
+			优先级,id 选择器优先级高！
+			##css文件中，同时给appleDiv，和appleClass，做了2个样式出来，id优先级高
+			
+		</div>
+		<h1>优先级：！important Infinity</h1>
+		<h2>行间样式=1000</h2>
+		<h3>	id=100</h3>
+		<h4>class | 属性 | 伪类=10</h4>
+		<h5>标签 | 伪元素=1</h5>
+		<h6>通配符=0</h6>
+		<hr />
+		256进制
+		
+	</body>
+</html>

@@ -1,0 +1,25 @@
+div{
+	background-color: white;
+	width: 300px;
+	height: 100px;
+}
+
+#myName{
+	background-color: aquamarine;
+}
+
+.classPhone{
+	background-color: bisque;
+}
+em{
+	background-color: brown;
+ 
+}
+/*优先级*/
+#appleDiv{
+	background-color: blueviolet;
+}
+.appleClass{
+	background-color: chocolate;
+}
+
