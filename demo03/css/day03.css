@@ -1,21 +1,28 @@
+
+/*标签选择器，直接用标签来约束样式，比如这个div，所有的div，都会
+ 是背景颜色white，白色。宽300px，高度100px；
+ * */
 div{
 	background-color: white;
 	width: 300px;
 	height: 100px;
 }
-
+/*#ID ，就是id（唯一身份）选择器。针对某个具体的id，而设置样式*/
 #myName{
 	background-color: aquamarine;
 }
-
+/*类名选择器，一个控件，可能有多个类名的，比如把某一类控件，都是配置同
+ 一个类名，这样就可以统一约束，成统一的样式了。
+ * */
 .classPhone{
 	background-color: bisque;
 }
+/*这是标签选择器的另外一个例子*/
 em{
 	background-color: brown;
  
 }
-/*优先级*/
+/*优先级 具体可以看html最后的部分*/
 #appleDiv{
 	background-color: blueviolet;
 }
