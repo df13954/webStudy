@@ -1,0 +1,22 @@
+*{
+	font-family: arial;
+}
+
+#fonttext {
+	color: red;
+	font-size: 50px;
+	font-family: cursive;
+	
+}
+
+#fontApple {
+	color: #f40;
+	font-family: arial;
+}
+div{
+	border: 1px solid black;
+	border-left-color: #000000;
+	border-right-color: #0000ff;
+	border-bottom-color: #FF0000;
+	border-top-color: #00ff00;
+}
