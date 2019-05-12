@@ -1,0 +1,61 @@
+/* 
+ 父子选择器，or 派生选择器
+ * */
+div h3{
+	font-family: arial;
+	color: #ccf;
+	
+}
+/*直接子元素选择器 div里面的span*/
+div span{
+	color: red;
+	font-family: "arial black";
+}
+
+/*并列选择器 就是把条件，一个一个合起来，缩小范围*/
+div.demoClass{
+	color: red;
+	font-family: "arial narrow";
+			
+}
+/*
+ * 我要把下面的3个标签，里面的文本，都是变统一的颜色
+ * 那么问题是，这里的color orange，都是一样的。这样写，好多重复
+ * 如果我要修改颜色，还得一个一个去修改
+ * 怎么解决这个问题呢？？
+ */
+/*em{
+	color: orange;
+}
+strong{
+	color: orange;
+}
+span{
+	color: orange;
+}*/
+/*分组选择器  把他们排在一起，然后设置属性，修改的时候，只需要修改一个地方
+ 共同的属性，可以写到一起管理
+ * */
+em,
+strong,
+span{
+	color: orange;
+	
+}
+/*单独的属性，可以分别配置，他们共同作用，如果属性重复了，后面的会覆盖前面的*/
+em{
+	font-family: "arial rounded mt bold";
+}
+span{
+	font-family: "微软雅黑";
+}
+/*这里的color: black; 就覆盖了。上面的共同颜色了*/
+strong{
+	font-family: "arial black";
+	color: black;
+}
+/*一个页面中，有多个标签的id是一样的，同样是可以作用在上面。*/
+#myid{
+	height: 200px;
+	background-color: #FFA500;
+}

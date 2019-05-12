@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/demo04.css"/>
+	</head>
+	<body>
+		<h1>第四天，其他选择器（复杂选择器）：</h1>
+		<ol>
+			<li>父子选择器，or 派生选择器 div h3 {具体样式} 翻译：
+				div标签下面第h3 都使用这个样式</li>
+			<li>直接子元素选择器</li>
+			<li>并列选择器</li>
+			<li>分组选择器</li>
+			
+			<div id="myid">
+				<h3>这是div 里面是h3 使用了css文件中的父子选择器</h3>
+			</div>
+			<hr />
+			<div id="myid">
+				<p>
+					<span id="">
+					直接子元素选择器 div里面的span,div下面有一个p标签中间隔开，
+					这样也是可以的
+				</span>
+				</p>
+			</div>
+			<div id="">
+				<span>浏览器找顺序，从右边往左边div span 先从span找，然后往div找</span>
+			</div>
+			<hr />
+			<h3>这里有个问题，怎么控制数字2的样式呢？？并列选择器</h3>
+			<h3>具体看css中语法 把2变红色</h3>
+			<div >1</div>
+			<div class="demoClass">2</div>
+			<p class="demoClass">3</p>
+				
+			<hr />
+			<h3>分组选择器，css中重复的代码块公用</h3>
+			<br />
+			<!--我要把下面的3个标签，里面的文本，都是变统一的颜色-->
+			<em>1</em>
+			<strong>2</strong>
+			<span id="">
+				3
+			</span>
+			
+			
+			
+			
+		</ol>
+		
+		
+		<h3>各种选择器，然后合并，然后算权重，真的好复杂～～</h3>
+	</body>
+</html>
