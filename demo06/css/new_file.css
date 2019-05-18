@@ -1,0 +1,82 @@
+
+/*16px 默认高度（大小）*/
+/*让一个文字，在div容器中，单行，居中
+ 可以把文字的行高（line-height）设置= div的高度
+ * */
+
+#title{
+	height: 100px;
+	border: 2px solid black;
+	text-align: center;
+	line-height: 100px;
+}
+/*文字的高度，如果设置比文字本身小，就会出现这种情况
+ 默认16px ，现在设置10px。重叠
+ * */
+#temp1{
+	height: 50px;
+	border: 1px solid black;
+	text-align: left;
+	line-height: 10px;
+}
+/*首行缩进text-indent
+ 1em = 1 *  font-size (16默认) = 16
+ 所以，2em就是2个文字的位置了
+ * */
+#indEm{
+	text-indent: 2em;
+}
+/*划线控制 underline 下划线 overline:在头顶
+ line-through:和del标签效果一样的
+ cursor: pointer 自己查询
+ * */
+span{
+	text-decoration: line-through;
+	color: aqua;
+	cursor: pointer;
+	
+}
+/*伪类选择器*/
+#id_hover:hover{
+	background-color: coral;
+}
+
+/*效果*/
+a{
+	text-decoration: none;
+	font-size: 30px;
+}
+/*当鼠标移动到区域之后，显示如下效果*/
+a:hover{
+	color: #FFF;
+	text-decoration: underline;
+	background-color: #f40;
+	font-weight: bold;
+	font-family: arial;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/*默认，（隐藏属性）他们这是隐藏了属性，默认的，就是因为这样我们
+ 默认写span的时候，会是inline的效果，我们改变display属性，同样
+ 可以达到其他效果。比如block
+ * */
+/*span{
+	display: inline;
+	
+}
+div{
+	display: block;
+}
+img{
+	display: inline-block;
+}*/
+img{
+	width: 100px;
+}
+
+#imp{
+	color: red;
+	font-family: arial;
+	
+}
