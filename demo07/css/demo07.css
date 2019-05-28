@@ -1,0 +1,82 @@
+/*初始化*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+ position: absolute;
+ 这2个view就不是同一层级的了，可以叠在一起
+ 脱离了原来的位置，进行定位（绝对定位）
+ 
+ #最近的，有定位的父级进行定位，如果 没有，相对于文档进行定位
+ * */
+
+#box1 {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	opacity: 0.5;
+}
+
+#box2 {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+}
+/*relative
+ 	保留原来的位置
+ 	相对于自己原来的位置进行定位
+ 	relative当机架
+ 	absolute做定位
+ * 
+ * */
+#box3 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: grey;
+}
+
+#box4 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 50px;
+	top: 150px;
+	background-color: aqua;
+}
+/*
+ 
+ *广告位的开发
+ *  position: fixed;必须的
+ * 左右，是屏幕比例的50%
+ * left: 50%;
+	right: 50%;
+	其实这个时候，绘制view的起点，就是在屏幕的中心了
+	问题来了，也就是view的左上角在中心，我们的view，偏右下
+	-----
+	margin-left: -50px;
+	margin-top: -50px;
+	margin 负值，往回挪！
+	当滚动屏幕的时候，这个view始终在屏幕中心
+	改变 窗口的大小也能在中区域，老师说这是固定写法
+	哈哈
+ * 
+ * */
+.adStyle{
+	position: fixed;
+	left: 50%;
+	right: 50%;
+	width: 100px;
+	margin-left: -50px;
+	margin-top: -50px;
+	height: 100px;
+	background-color: #008000;
+	color: #ffffff;
+}
