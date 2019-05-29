@@ -1,0 +1,92 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*五环的实现*/
+.cirlce{
+width: 100px;
+	height: 100px;
+	border: 5px solid;
+	border-radius: 50%;
+}
+
+.center{
+	position: absolute;
+	border: 5px solid gray;
+	height: 190px;
+	width: 360px;
+	left: 50%;
+	top: 50%;
+	margin-left: -180px;
+	margin-top: -95px;
+}
+
+
+#c1{
+	position: absolute;
+	margin-left: 100px;
+	border: 5px solid;
+	color: red;
+}
+
+#c2{
+	position: absolute;
+	margin-left: 180px;
+	color: green;
+}
+#c3{
+	position: absolute;
+	left: 50px;
+	top: 80px;
+	color: blue;
+	
+}
+#c4{
+	position: absolute;
+	left: 130px;
+	top: 80px;
+	color: darkgoldenrod;
+	z-index: 5
+	
+}
+#c5{
+	position: absolute;
+	color: lightcoral;
+	left: 210px;
+	top: 80px;
+}
+
+/*两栏布局*/
+#left{
+	height: 100px;
+	background-color: darkgreen;
+	margin-right: 100px;
+}
+#right{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	opacity: 0.3;
+	right: 0;
+	color: #fff;
+	position: absolute;
+}
+/*这样子，就能各占用一半了
+ 对于，布局位置，已经开始熟悉一点，就是，自己想要的位置，放东西，现在
+ 可以使用position熟悉来控制，但是还是不熟悉
+   * */
+#apple{
+	height: 100px;
+	background-color: yellowgreen;
+	width: 50%;
+	position: absolute;
+	margin-left: 50%;
+}
+#phone{
+	opacity: 0.5;
+	width: 50%;
+	height: 100px;
+	color: #FFFFFF;
+	background-color: -webkit-link;
+	
+}
