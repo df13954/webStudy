@@ -1,0 +1,37 @@
+
+/*初始化*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#title{
+	width: 100%;
+	height: 100px;
+	font-size: 100px;
+	text-align: center;
+}
+/*距离左边，距离上，都是100px*/
+#out{
+	width: 100px;
+	height: 100px;
+	margin-left: 100px;
+	margin-top: 100px;
+	background-color: black;
+	
+}
+
+/*in 是在黑色的盒子里面的
+ 
+ * 现在，in 设置距离左边50px
+ * 设置距离上面50px。看看效果如何
+ * （我们想效果，应该是在黑色盒子的右下角）
+ * */
+#in{
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	margin-left: 50px;
+	margin-right: 50px;     
+}
+
