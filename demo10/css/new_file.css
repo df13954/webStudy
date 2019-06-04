@@ -1,0 +1,90 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*背景图片，在div中设置背景，控制位置*/
+
+#div-bg {
+	border: 1px solid black;
+	width: 500px;
+	height: 500px;
+	background-image: url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1559570514&di=53cb374073ccdfa129043945a1d5c1a2&src=http://i1.hdslb.com/bfs/archive/cbbb8fad5f0972062ef12aee39473dbc534f97fe.jpg);
+	background-size: 500px 500px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+/*inline-block 释放宽高
+ 
+ * text-decoration: none
+ * 把a标签的下划线去掉。
+ * 
+ * 当网络不好的时候，浏览器不加载css，那整个页面就空白了。
+ * 啥也没有，这不符合，现在我们在css没有的情况可以显示她的名字
+ *方法一
+ * 缩紧顶出去
+ * nowrap 
+ * overflow，溢出隐藏
+ * 这是和我们上面用的三件套其中2个
+ * 当css不加载的时候，同样可以显示出这个名字，点击名字跳链接
+ * 有图片的时候，不显示名字，
+ * */
+
+#a-chen {
+	display: inline-block;
+	text-decoration: none;
+	color: gray;
+	width: 500px;
+	height: 300px;
+	background-image: url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1559570514&di=53cb374073ccdfa129043945a1d5c1a2&src=http://i1.hdslb.com/bfs/archive/cbbb8fad5f0972062ef12aee39473dbc534f97fe.jpg);
+	background-size: 500px 300px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/*
+ 
+ * padding-top: 300px;
+	overflow: hidden;
+	把padding距离设置高度
+	高度设置0
+	这样就可以把内容溢出到盒子外面，到了外面就好办事了
+	overflow: hidden 溢出隐藏
+ * */
+#a-yu {
+	display: inline-block;
+	text-decoration: none;
+	color: gray;
+	width: 500px;
+	height: 0px;
+	background-image: url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1559570514&di=53cb374073ccdfa129043945a1d5c1a2&src=http://i1.hdslb.com/bfs/archive/cbbb8fad5f0972062ef12aee39473dbc534f97fe.jpg);
+	background-size: 500px 300px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	padding-top: 300px;
+	overflow: hidden;
+	
+}
+/*固定宽度，然后多行显示的时候，溢出部分 打点 。。。
+ 
+ * 根据论坛大佬的指点，可以这样做
+ * 这样能够修复上一课的多行只能截断问题。真是感谢大佬【HipHop-Man】*/
+#mut-text{
+	border: 1px solid black;
+	width: 300px;
+	height: 60px;
+	line-height: 20px;
+	
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	
+}
